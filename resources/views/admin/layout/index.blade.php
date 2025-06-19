@@ -11,7 +11,7 @@
     <!-- <link rel="apple-touch-icon" sizes="76x76" href="admin_assets/img/apple-icon.png"> -->
     <link rel="icon" type="image/png" href="images/favicon/cinema.png ">
     <title>
-        Admin Cinema
+         Cinema
     </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
