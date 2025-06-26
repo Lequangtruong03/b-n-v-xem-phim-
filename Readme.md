@@ -1,4 +1,24 @@
-![image](https://github.com/user-attachments/assets/b14bb59c-9b59-4a17-b17a-75e4c4e00f37)
+GIỚI THIỆU ĐỀ TÀI
+----
+Hiện nay hình thức xem phim chiếu rạp không còn xa lạ với chúng ta, nó không chỉ đơn thuần để giải trí, giảm bớt áp lực, mà còn mang lại những trải nghiệm, kích thích trí tưởng tượng và tạo ra những cảm xúc mạnh mẽ.
+Vì lẽ đó nhu cầu xem phim chiếu rạp của con người ngày càng tăng, nó dần trở thành một phần không thể thiếu trong cuộc sống, nắm bắt được điều đó đã có rất nhiều cụm rạp được xây dựng nằm rải rác khắp Việt Nam nhằm đáp ứng nhu cầu của khách hàng. 
+Để vừa giúp quản trị viên trong việc thống kê, quản lý được số lượng cụm rạp lớn vừa tạo sự thuận tiện cho khách hàng khi giờ đây khách hàng chỉ cần ngồi tại nhà vẫn có thể chọn suất chiếu và mua vé mà không cần phải đến trực tiếp tại rạp  thì nhóm em quyết định thực hiện việc thiết kế, xây dựng website quản lý hệ thống rạp chiếu phim dành cho quản trị viên lẫn khách hàng.
+
+
+
+Sơ đồ cấu trúc (Class Diagram)
+----
+![image](https://github.com/user-attachments/assets/ff0fffd4-c38c-4f59-9c92-3a58d57a87ec)
+
+----
+Sơ đồ chức năng
+---
+![image](https://github.com/user-attachments/assets/8f857da5-4804-4760-a087-22de09852fef)
+----
+Sơ đồ Use Case
+----
+![image](https://github.com/user-attachments/assets/b298a0b3-a13e-499f-a650-d901bd72da50)
+
 
 # 🎬 Website Quản Lý Hệ Thống Rạp Chiếu Phim
 
@@ -14,16 +34,11 @@ Dự án được thực hiện nhằm xây dựng một **website quản lý h�
 
 ## 👥 Thành Viên & Nhiệm Vụ
 
-| MSSV       | Họ và Tên           | Nhiệm Vụ Chính                                                                 |
-|------------|---------------------|--------------------------------------------------------------------------------|
-| 23010654   | Bùi Hoàng Huy       | - Phân tích yêu cầu đề tài, chức năng hệ thống, nghiên cứu mô hình dữ liệu    |
-| 21012097   | Lê Quang Trường     | - Xây dựng Model, Migration, Controller trong Laravel, xử lý logic nghiệp vụ  |
-| 23010178   | Nguyễn Huy Hiệp     | - Thiết kế giao diện người dùng với Blade Template, giao diện đặt vé, lịch    |
+| MSSV       | Họ và Tên           |
+|------------|---------------------|
+| 21012097   | Lê Quang Trường     | 
 
-🔄 **Cả nhóm cùng thực hiện:**
-- Tích hợp hệ thống (Model – View – Controller)
-- Kiểm thử chức năng (đặt vé, quản lý phim, lịch chiếu, người dùng...)
-- Viết báo cáo, tạo slide và file README
+
 
 ---
 
@@ -48,6 +63,15 @@ Dự án được thực hiện nhằm xây dựng một **website quản lý h�
 - 🌐 **Chuyển đổi ngôn ngữ (Tiếng Việt / English)**
 
 ---
+Giao điện người dùng
+---
+![image](https://github.com/user-attachments/assets/166aca1b-6a15-4533-8f41-cdee52f628fd)
+---
+Giao điện ADmin
+---
+![image](https://github.com/user-attachments/assets/e7fb996b-b51c-4763-9412-462658121139)
+
+
 
 ## 🚀 Hướng Dẫn Cài Đặt
 
