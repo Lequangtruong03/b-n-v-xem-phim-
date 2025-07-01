@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Đề Tài: Website Quản Lý Hệ Thống Rạp Chiếu Phim</title>
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3 {
+            color: #343a40;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            text-align: center;
+            margin-top: 15px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Image & Diagram Styles --- */
+        .diagram-gallery, .ui-gallery {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .diagram-gallery {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .ui-gallery {
+             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        .gallery-item {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fdfdfd;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            background-color: #e9ecef; /* Placeholder color for loading */
+        }
+
+        /* --- Table Styles --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        thead th {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+
+        /* --- List & Code Styles --- */
+        ul {
+            list-style-type: '✅  ';
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Fira Code", "Courier New", monospace;
+            font-size: 0.95em;
+        }
+
+        code {
+            font-family: inherit;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>GIỚI THIỆU ĐỀ TÀI</h1>
+        <p>Hiện nay hình thức xem phim chiếu rạp không còn xa lạ với chúng ta, nó không chỉ đơn thuần để giải trí, giảm bớt áp lực, mà còn mang lại những trải nghiệm, kích thích trí tưởng tượng và tạo ra những cảm xúc mạnh mẽ.</p>
+        <p>Vì lẽ đó nhu cầu xem phim chiếu rạp của con người ngày càng tăng, nó dần trở thành một phần không thể thiếu trong cuộc sống, nắm bắt được điều đó đã có rất nhiều cụm rạp được xây dựng nằm rải rác khắp Việt Nam nhằm đáp ứng nhu cầu của khách hàng.</p>
+        <p>Để vừa giúp quản trị viên trong việc thống kê, quản lý được số lượng cụm rạp lớn vừa tạo sự thuận tiện cho khách hàng khi giờ đây khách hàng chỉ cần ngồi tại nhà vẫn có thể chọn suất chiếu và mua vé mà không cần phải đến trực tiếp tại rạp thì nhóm em quyết định thực hiện việc thiết kế, xây dựng website quản lý hệ thống rạp chiếu phim dành cho quản trị viên lẫn khách hàng.</p>
+
+        <hr>
+
+        <h2>Sơ Đồ Phân Tích & Thiết Kế</h2>
+        <div class="diagram-gallery">
+            <div class="gallery-item">
+                <img src="https://github.com/user-attachments/assets/ff0fffd4-c38c-4f59-9c92-3a58d57a87ec" alt="Sơ đồ cấu trúc Class Diagram">
+                <h3>Sơ đồ cấu trúc (Class Diagram)</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/user-attachments/assets/8f857da5-4804-4760-a087-22de09852fef" alt="Sơ đồ chức năng">
+                <h3>Sơ đồ chức năng</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/user-attachments/assets/b298a0b3-a13e-499f-a650-d901bd72da50" alt="Sơ đồ Use Case">
+                <h3>Sơ đồ Use Case</h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>🎬 Website Quản Lý Hệ Thống Rạp Chiếu Phim</h1>
+
+        <section>
+            <h2>🧾 Mục Đích Dự Án</h2>
+            <p>Dự án được thực hiện nhằm xây dựng một <strong>website quản lý hệ thống rạp chiếu phim</strong> phục vụ <strong>cả quản trị viên và khách hàng</strong>, với mục tiêu:</p>
+            <ul>
+                <li>Giúp khách hàng dễ dàng <strong>đặt vé xem phim trực tuyến</strong>, lựa chọn ghế, nhận mã khuyến mãi, mua combo ăn uống, v.v.</li>
+                <li>Hỗ trợ quản trị viên <strong>quản lý phim, phòng chiếu, lịch chiếu, vé, nhân viên, doanh thu</strong> và nhiều nghiệp vụ khác.</li>
+                <li>Tích hợp các chức năng thực tiễn như gửi mail, xác thực OTP, chuyển đổi ngôn ngữ, thống kê dữ liệu...</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>👥 Thành Viên & Nhiệm Vụ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>MSSV</th>
+                        <th>Họ và Tên</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21012097</td>
+                        <td>Lê Quang Trường</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>⚙️ Công Nghệ Sử Dụng</h2>
+            <ul>
+                <li><strong>Ngôn ngữ chính</strong>: PHP (Laravel Framework)</li>
+                <li><strong>Giao diện người dùng</strong>: Blade Template (Laravel)</li>
+                <li><strong>Cơ sở dữ liệu</strong>: MySQL</li>
+                <li><strong>Công cụ hỗ trợ</strong>: Composer, Git, VSCode, Figma</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🧩 Các Chức Năng Chính</h2>
+            <ul>
+                <li><strong>Đặt vé trực tuyến</strong>: Chọn phim, rạp, phòng, ghế, combo, thanh toán online</li>
+                <li><strong>Quản lý phim, rạp, phòng chiếu, lịch chiếu</strong></li>
+                <li><strong>Quản lý ghế theo loại</strong> (thường, VIP, couple)</li>
+                <li><strong>Tạo và quản lý mã khuyến mãi, combo thức ăn</strong></li>
+                <li><strong>Thống kê doanh thu</strong> theo phim, rạp, thời gian, loại vé</li>
+                <li><strong>Quản lý tài khoản người dùng và nhân viên</strong></li>
+                <li><strong>Xác thực OTP, gửi email</strong> đặt vé, khôi phục mật khẩu</li>
+                <li><strong>Chuyển đổi ngôn ngữ</strong> (Tiếng Việt / English)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <h2>Giao Diện Hệ Thống</h2>
+        <div class="ui-gallery">
+            <div class="gallery-item">
+                <img src="https://github.com/user-attachments/assets/166aca1b-6a15-4533-8f41-cdee52f628fd" alt="Giao diện người dùng">
+                <h3>Giao diện Người Dùng (Client)</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://github.com/user-attachments/assets/e7fb996b-b51c-4763-9412-462658121139" alt="Giao diện Admin">
+                <h3>Giao diện Quản Trị (Admin)</h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <section>
+            <h2>🚀 Hướng Dẫn Cài Đặt</h2>
+            <pre><code># 1. Clone the repository from GitHub
+git clone https://github.com/your-username/ten-du-an.git
+
+# 2. Navigate into the project directory
+cd ten-du-an
+
+# 3. Install PHP dependencies
+composer install
+
+# 4. Install JavaScript dependencies
+npm install
+
+# 5. Create a copy of the .env file
+cp .env.example .env
+
+# 6. Generate a new application key
+php artisan key:generate
+
+# 7. Run database migrations to create tables
+php artisan migrate
+
+# 8. Start the local development server
+php artisan serve</code></pre>
+        </section>
+
+    </div>
+
+</body>
+</html>
